@@ -1,0 +1,16 @@
+1. Export Figma Token, there is a feature support to send the tokens to an url or server
+2. Run npm build
+    a. the build split the input tokens.json into theme/light/json & theme/dark.json
+    b. build Style Dictionary (running build.js) => output/light.css light.json dark.css dark.json
+    c. import the light.json to tailwind.config.js. Console.log to see the nested obj of the color tokens, you will see the token/variables and the value
+    d. build tailwind. The demo import all the css into a big css file(postcss import everything to styles.css then output the tailwind.css)
+    e. build react
+    f. Need to import tailwind.css to the App.js since all the variables(.light-theme, .dark-theme) are in that file
+    g. Swap the theme
+
+3. Design -> Code
+    - we might need some special hint to indicate where the utility class starts in the design file
+
+4. Other:
+ - Need help on integrate Style Dictionary to app-core
+ - Need to discuss the process when design team update the token

@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn-primary {
+    @apply bg-action-bg py-2 px-2 border-2 rounded-md text-action-text-strong-inverse  hover:bg-action-bg-hover;
+}
+.btn-secondary {
+    @apply  border-2 rounded-md py-2 px-2 border-action-border text-action-text  hover:bg-action-bg-weak-hover hover:text-action-text-hover;
+}
+.btn-disabled{
+    @apply border-2 rounded-md py-2 px-2 border-neutral-border-disabled bg-neutral-bg-disabled text-neutral-text-disabled
+}
+.btn-tertitary{
+    @apply text-action-text-strong py-2 px-4
+}
+
