@@ -17,6 +17,8 @@ function App() {
         <Button type={'btn-disabled'} title={'Disabled Button'}/>
         <Button type={'btn-tertitary'} title={<FaBeer />}/>   
         <Chip type={'chip-mcp'} title={"Chip MCP"} interactive={true}/>
+        <Chip type={'chip-mcp'} title={"Chip MCP"} interactive={true} sentiment={'success'} />
+        <Chip type={'chip-mcp'} title={"Chip MCP"} interactive={true} sentiment={'action'} />
         {/* <input type="checkbox" class="appearance-none border-2 checked:bg-action-bg border-action-border h-4 w-4 rounded-3xl" /> */}
       </div>
     </div>

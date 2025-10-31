@@ -2,15 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-.chip-neutral {
+/* Base chip layout */
+.chip {
     @apply box-border inline-flex items-center justify-center h-[20px] min-w-[28px] rounded-[16px]
-    border border-neutral-border text-neutral-text-weak text-[12px] leading-4 px-1;
+    text-[12px] leading-4 px-1;
 }
 
-/* Interactive state variants (hover/active) */
+/* Sentiment: neutral */
+.chip-neutral {
+    @apply border border-neutral-border text-neutral-text-weak;
+}
+
 .chip-neutral.interactive {
     @apply cursor-pointer hover:bg-neutral-bg-subtle
     active:bg-[#ededed] hover:border-[#5e5e5e] active:border-[#474747] active:text-[#474747];
+}
+
+/* Sentiment: success */
+.chip-success {
+    @apply border border-success-border text-success-text;
+}
+.chip-success.interactive {
+    @apply cursor-pointer hover:bg-success-bg-subtle hover:border-success-border active:bg-success-bg-weak;
+}
+
+/* Sentiment: warning */
+.chip-warning {
+    @apply border border-warning-border text-warning-text;
+}
+.chip-warning.interactive {
+    @apply cursor-pointer hover:bg-warning-bg-subtle hover:border-warning-border active:bg-warning-bg-weak;
+}
+
+/* Sentiment: danger */
+.chip-danger {
+    @apply border border-danger-border text-danger-text;
+}
+.chip-danger.interactive {
+    @apply cursor-pointer hover:bg-danger-bg-subtle hover:border-danger-border active:bg-danger-bg-weak;
+}
+
+/* Sentiment: action */
+.chip-action {
+    @apply border border-action-border text-action-text;
+}
+.chip-action.interactive {
+    @apply cursor-pointer hover:bg-action-bg-weak-hover hover:border-action-border active:bg-action-bg-weak active:text-action-text-hover;
 }
 
 
