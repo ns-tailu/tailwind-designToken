@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chip-neutral {
+    @apply box-border inline-flex items-center justify-center h-[20px] min-w-[28px] rounded-[16px]
+    border border-neutral-border text-neutral-text-weak text-[12px] leading-4 px-1;
+}
+
+/* Interactive state variants (hover/active) */
+.chip-neutral.interactive {
+    @apply cursor-pointer hover:bg-neutral-bg-subtle
+    active:bg-[#ededed] hover:border-[#5e5e5e] active:border-[#474747] active:text-[#474747];
+}
+
+
