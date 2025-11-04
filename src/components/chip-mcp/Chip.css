@@ -4,8 +4,8 @@
 
 /* Base chip layout */
 .chip {
-    @apply box-border inline-flex items-center justify-center h-[20px] min-w-[28px] rounded-[16px]
-    text-[12px] leading-4 px-1;
+    @apply box-border inline-flex items-center justify-center h-[20px] min-w-[28px] w-auto rounded-[16px]
+    text-[12px] leading-4 px-1 font-['Lato',sans-serif] flex-shrink-0;
 }
 
 /* Sentiment: neutral */

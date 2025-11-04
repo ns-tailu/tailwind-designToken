@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base toggle styles */
+.toggle {
+    @apply box-border flex items-center rounded-[100px] cursor-pointer transition-all duration-200;
+    position: relative;
+}
+
+/* Regular size */
+.toggle-regular {
+    @apply h-5 w-10;
+}
+
+.toggle-regular .toggle-thumb {
+    @apply w-4 h-4 rounded-full transition-all duration-200;
+    background-color: #ffffff;
+    position: absolute;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-regular.toggle-off .toggle-thumb {
+    left: 2px;
+}
+
+.toggle-regular.toggle-on .toggle-thumb {
+    right: 2px;
+}
+
+/* Small size */
+.toggle-small {
+    @apply h-4 w-8;
+}
+
+.toggle-small .toggle-thumb {
+    @apply w-3 h-3 rounded-full transition-all duration-200;
+    background-color: #ffffff;
+    position: absolute;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-small.toggle-off .toggle-thumb {
+    left: 2px;
+}
+
+.toggle-small.toggle-on .toggle-thumb {
+    right: 2px;
+}
+
+/* ON state - Action colors */
+.toggle-on {
+    @apply bg-action-bg;
+}
+
+.toggle-on:not(.toggle-disabled):hover {
+    @apply bg-action-bg-hover;
+}
+
+.toggle-on:not(.toggle-disabled):active {
+    @apply bg-[#0c4b78];
+}
+
+.toggle-on.toggle-disabled {
+    @apply bg-action-bg-disabled;
+}
+
+/* OFF state - Neutral colors */
+.toggle-off {
+    @apply bg-[#b3b3b3];
+}
+
+.toggle-off:not(.toggle-disabled):hover {
+    @apply bg-[#b3b3b3];
+}
+
+.toggle-off:not(.toggle-disabled):active {
+    @apply bg-[#b3b3b3];
+}
+
+.toggle-off.toggle-disabled {
+    @apply bg-[#e2e2e2];
+}
+
+.toggle-off.toggle-disabled .toggle-thumb {
+    @apply bg-[#fafafa];
+}
+
+.toggle-on.toggle-disabled .toggle-thumb {
+    @apply bg-[#fafafa];
+}
+
+/* Disabled state */
+.toggle-disabled {
+    @apply cursor-not-allowed opacity-60;
+}
+
