@@ -619,25 +619,84 @@ Ensure the default browser behavior of the `hidden` attribute.
   --chart-1st: #0297c0ff;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .m-10 {
   margin: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.box-border {
+  box-sizing: border-box;
 }
 
 .flex {
   display: flex;
 }
 
-.h-4 {
-  height: 1rem;
+.h-8 {
+  height: 2rem;
 }
 
-.w-4 {
-  width: 1rem;
+.h-14 {
+  height: 3.5rem;
 }
 
-.appearance-none {
-  -webkit-appearance: none;
-          appearance: none;
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -646,16 +705,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.border-2 {
-  border-width: 2px;
+.bg-neutral-bg-base {
+  background-color: var(--neutral-bg-base, #ffffffff);
 }
 
-.border-action-border {
-  border-color: var(--action-border, #047ab5ff);
+.bg-neutral-bg-subtle {
+  background-color: var(--neutral-bg-subtle, #fafafaff);
+}
+
+.bg-\[\#103B5C\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 59 92 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-95 {
+  --tw-bg-opacity: 0.95;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .text-xl {
@@ -663,14 +742,63 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-light {
   font-weight: 300;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-8 {
+  line-height: 2rem;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .text-neutral-text {
   color: var(--neutral-text, #292929ff);
 }
 
-.checked\:bg-action-bg:checked {
-  background-color: var(--action-bg, #047ab5ff);
+.text-neutral-text-weak {
+  color: var(--neutral-text-weak, #737373ff);
+}
+
+.text-neutral-text-inverse {
+  color: var(--neutral-text-inverse, #ffffffff);
+}
+
+.shadow-\[0px_20px_25px_0px_rgba\(0\2c 0\2c 0\2c 0\.1\)\2c 0px_10px_10px_0px_rgba\(0\2c 0\2c 0\2c 0\.04\)\] {
+  --tw-shadow: 0px 20px 25px 0px rgba(0,0,0,0.1),0px 10px 10px 0px rgba(0,0,0,0.04);
+  --tw-shadow-colored: 0px 20px 25px 0px var(--tw-shadow-color), 0px 10px 10px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[0px_25px_50px_0px_rgba\(0\2c 0\2c 0\2c 0\.25\)\] {
+  --tw-shadow: 0px 25px 50px 0px rgba(0,0,0,0.25);
+  --tw-shadow-colored: 0px 25px 50px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
